@@ -1,0 +1,28 @@
+@charset "utf-8";
+* {margin: 0px;padding: 0px;}
+
+.w3-sidebar a {
+    font-family: "Roboto", sans-serif
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.w3-wide {
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    background-image: url("Background.jpg")
+}
+
+#title{
+    font-family: 'Alfa Slab One';
+}
+p{
+    font-family: 'BenchNine';font-size: 20px;
+}
+

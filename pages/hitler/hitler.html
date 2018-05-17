@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="../styles/global.css">
+<link rel="stylesheet" href="../styles/article.css">
+<!-- Framework css -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- Fontes -->
+<link href='https://fonts.googleapis.com/css?family=BenchNine' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Bungee' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=BenchNine' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<!-- Icones -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+</style>
+
+<body class="w3-content" style="max-width:1200px">
+
+    <!-- Sidebar/menu -->
+    <!-- #region sidebar -->
+    
+    <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px; border-right: 1px solid rgba(0,0,0,.35)" id="mySidebar">
+        <div class="w3-container w3-display-container w3-padding-16">
+            <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+            <h3 class="w3-wide">
+                <b>2 Guerra Mundial</b>
+            </h3>
+        </div>
+        
+        <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+            <!-- Pagina Principal -->
+            <a href="../../main.html" class="w3-bar-item w3-button">Página Principal</a>
+            <!-- Biografias menu -->
+            <a id="biografiaMenu" onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+                Biografias
+                <i class="fa fa-caret-down"></i>
+            </a>
+            <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+                <a href="#" class="w3-bar-item w3-button">Hitler</a>
+                <a href="#" class="w3-bar-item w3-button">Nome2</a>
+                <a href="#" class="w3-bar-item w3-button">Nome3</a>
+            </div>
+
+            <!-- Armas menu -->
+            <a id="armasMenu" onclick="myAccFuncArmas()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align"
+                id="myBtnArmas">
+                Armas
+                <i class="fa fa-caret-down"></i>
+            </a>
+            <div id="demoAccArmas" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+                <a href="#" class="w3-bar-item w3-button">Snipers</a>
+                <a href="#" class="w3-bar-item w3-button">Shotgun</a>
+                <a href="#" class="w3-bar-item w3-button">Sub machine</a>
+            </div>
+
+            <!-- Resumo menu -->
+            <a id="resumoMenu" onclick="myAccFuncResumo()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align"
+                id="myBtnResumo">
+                Resumo
+                <i class="fa fa-caret-down"></i>
+            </a>
+            <div id="demoAccResumo" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+                <a href="#" class="w3-bar-item w3-button">Pré guerra</a>
+                <a href="#" class="w3-bar-item w3-button">Guerra</a>
+                <a href="#" class="w3-bar-item w3-button">Pós Guerra</a>
+            </div>
+
+            <a href="#" class="w3-bar-item w3-button">Shoes</a>
+
+        </div>
+    
+        <!-- #endregion sidebar -->
+        <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a>
+        <a href="#footer" class="w3-bar-item w3-button w3-padding">Subscribe</a>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+        <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+
+    <div class="w3-hide-large" style="margin-top:83px"></div>
+    <div class="w3-main article" style="margin-left:260px">
+        <h1 id="title" class="main">Introdução</h1>
+        <div id="img" class="fright thumb">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Hitler_portrait_crop.jpg/187px-Hitler_portrait_crop.jpg"
+                alt="">
+            <section class="thumbcaption">
+                Adolf Hitler
+            </section>
+        </div>
+        <p> Adolf Hitler nasceu em 1889 e supostamente morreu em 1945, nascido em Branau, na Austria no dia 20 de Abril de 1889,
+            Fillho de Alois Hitler que era um empregado da anfandega e Klara Hitler, tinha como objectivo entrar na academia
+            de Belas Artes de Viena porém foi em vão mesmo depois de duas tentativas. No ano de 1913 foi para Munique e em
+            agosto de 1914 alistou-se no regimento da infantaria do exercito alemão para a Primeira Guerra Mundial (1914-1918).
+            Nesse ano recebeu a condecoração da Cruz de Ferro.</p>
+        <h1 id="title" class="sub-title">Antes do poder</h1>
+        <p>A Alemanha foi derrotada na guerra e com isso surgiu uma enorme insatisfação social provocada também pela rise económica
+            que houve no pais e como consequência surgiram diversos partidos de oposição ao governo. Em 1919 em Munique houve
+            um pequeno grpo de Nacionalista que fundou um partido totalitário parecido com o fascismo italiano. Filiado ao
+            partido, em 1920, Hitler usa o nome de Partido Nacional-Socialista dos Trabalhadores Alemães ou seja o conhecido
+            partido nazista e nesse partido havia uma organização paramilitar a seção de assalto, encarregada de intimar
+            os opositores, prioritariamente judeus, comunistas e socialistas. Hitler utiliza do sentimento do povo para conseguir
+            força.</p>
+        <p> Em Novembro de 1923, Hitler e os seus seguidores tentaram assumir o poder mas foram fracassados e todos foram presos.
+            Hitler na prisão de 5 anos só cumpriu 8 meses e foi lá onde escreveu uma parte do livro “Minha Luta”, obra que
+            mostra os fundamentos do nazismo como o poder da raça ariana que seriam os descendentes de um grupo indo-europeu
+            mais puro, juntamente com o nacionalismo exagerado, o totalitarismo, o anticomunisco e o domínio de alguns territórios
+            para aumentar o desenvolvimento alemão.</p>
+        <p>Por causa da crise os seis milhões de desempregados juntaram se ao partido nacional socialista e o extremismo tomou
+            conta da Alemanha. Em 1930 hitler já era cidadão Alemão e o seu partido já tinha 1,5 milhões de apoiantes. Nas
+            eleições de 1932 os nazistas elegem 230 deputados. Em 1933, por conta da crise do parlamento, o presidente ofereceu
+            o cargo de chanceler a Hitler.</p>
+            <h1 id="title" class="sub-title">Quando assumiu o poder</h1>
+        <p>Depois de tar no poder Hitler instalou a ditadura totalitarista. Deputados e lideeres da esquerda foram para campos
+            de concentração presos juntamente com os opositores do partido e mais tarde os judeus e prisioneiros de guerra.
+            Para ajudar a manter o poder Hitler criou Guestapo, que seria a policia secreta do estado. Em 1934 morreu o presidente
+            da Alemanha e Hitler assumiu as funções de Chanceler e agora de presidente. Em 1935 o governo de adolf decretou
+            o rearmamento alemão que havia sido proibido no tratado de Versalhes.</p>
+        <p>Em maio 1938 o exercito alemão ao mandado de Hitler invadiu a Austria, em 1939 rompendo o acordo de Munique, ocuparam
+            a Tchecoslovaquia, em 1 de Setembro atravessou a fronteira da Polonia, passado dois dias a França e Inglaterra
+            declaram guerra a Hitler, formando se assim a segunda guerra mundial. Depois de abril ed 1940 a Alemanha foi
+            em direcção à Europa ocidental, conquistando assim a Noruega, a Dinamarca, Belgica, Holanda e a França.</p>
+        <p>Em 1941 quebrando mais uma vez um pacto mas desta vez com stalin, Hitler invadiu a União Soviética. A partir de 1943
+            começou a lenta agonia dos nazifascistas. As tropas aliadas anglo americanas e soviéticas fecham o cerco na Alemanha
+            e assim as tropas de Hitler foram forçadas a recuar. Hitler desesperadamente refugiou se em um bunker em Berlim
+            e morreu ao lado da sua mulher Eva Braun onde ambos se suicidaram. O exercito soviético liquidou a os alemães
+            em vários países e entraram com sucesso em Berlim, em 2 de maio de 1945.</p>
+        <p>Depois de tar no poder Hitler instalou a ditadura totalitarista. Deputados e lideeres da esquerda foram para campos
+                de concentração presos juntamente com os opositores do partido e mais tarde os judeus e prisioneiros de guerra.
+                Para ajudar a manter o poder Hitler criou Guestapo, que seria a policia secreta do estado. Em 1934 morreu o presidente
+                da Alemanha e Hitler assumiu as funções de Chanceler e agora de presidente. Em 1935 o governo de adolf decretou
+                o rearmamento alemão que havia sido proibido no tratado de Versalhes.</p>
+        <p>Em maio 1938 o exercito alemão ao mandado de Hitler invadiu a Austria, em 1939 rompendo o acordo de Munique, ocuparam
+                a Tchecoslovaquia, em 1 de Setembro atravessou a fronteira da Polonia, passado dois dias a França e Inglaterra
+                declaram guerra a Hitler, formando se assim a segunda guerra mundial. Depois de abril ed 1940 a Alemanha foi
+                em direcção à Europa ocidental, conquistando assim a Noruega, a Dinamarca, Belgica, Holanda e a França.</p>
+        <h1 id="title" class="sub-title">Fim de vida de Hitler</h1>
+        <p>Em 1941 quebrando mais uma vez um pacto mas desta vez com stalin, Hitler invadiu a União Soviética. A partir de 1943
+                começou a lenta agonia dos nazifascistas. As tropas aliadas anglo americanas e soviéticas fecham o cerco na Alemanha
+                e assim as tropas de Hitler foram forçadas a recuar. Hitler desesperadamente refugiou se em um bunker em Berlim
+                e morreu ao lado da sua mulher Eva Braun onde ambos se suicidaram. O exercito soviético liquidou a os alemães
+                em vários países e entraram com sucesso em Berlim, em 2 de maio de 1945.</p>
+        <p>Hitler morreu em Berlim, na Alemanha, no dia 30 de abri de 1945</p>
+    </div>
+    <!-- End page content -->
+
+
+    <!-- Newsletter Modal -->
+    <div id="newsletter" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+            <div class="w3-container w3-white w3-center">
+                <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+                <h2 class="w3-wide">NEWSLETTER</h2>
+                <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+                <p>
+                    <input class="w3-input w3-border" type="text" placeholder="Enter e-mail">
+                </p>
+                <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Accordion 
+        let myAccFuncBtn = document.getElementById("demoAcc");
+        myAccFuncBtn.addEventListener('click', ev => myAccFunc());
+
+        function myAccFunc() {
+            if (myAccFuncBtn.className.indexOf("w3-show") == -1) {
+                myAccFuncBtn.className += " w3-show";
+            } else {
+                myAccFuncBtn.className = myAccFuncBtn.className.replace(" w3-show", "");
+            }
+        }
+
+        let myAccFuncArmasBtn = document.getElementById("demoAccArmas");
+        myAccFuncArmasBtn.addEventListener('click', ev => myAccFuncArmas());
+
+        function myAccFuncArmas() {
+            if (myAccFuncArmasBtn.className.indexOf("w3-show") == -1) {
+                myAccFuncArmasBtn.className += " w3-show";
+            } else {
+                myAccFuncArmasBtn.className = myAccFuncArmasBtn.className.replace(" w3-show", "");
+            }
+        }
+        let myAccFuncResumoBtn = document.getElementById("demoAccResumo");
+        myAccFuncResumoBtn.addEventListener('click', ev => myAccFuncResumo());
+
+        function myAccFuncResumo() {
+            if (myAccFuncResumoBtn.className.indexOf("w3-show") == -1) {
+                myAccFuncResumoBtn.className += " w3-show";
+            } else {
+                myAccFuncResumoBtn.className = myAccFuncResumoBtn.className.replace(" w3-show", "");
+            }
+        }
+
+
+
+        // Click on the "Jeans" link on page load to open the accordion for demo purposes
+        // document.getElementById("myBtn").click();
+        // document.getElementById("myBtnArmas").click();
+        // document.getElementById("myBtnResumo").click();
+
+
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
