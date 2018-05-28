@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="../styles/global.css">
+<link rel="stylesheet" href="../styles/article.css">
+<!-- Framework css -->
+<link rel="stylesheet" href="../../w3.css">
+<!-- Fontes -->
+<link href='https://fonts.googleapis.com/css?family=BenchNine' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Bungee' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=BenchNine' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<!-- Icones -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+</style>
+
+<body class="w3-content" style="max-width:1200px">
+
+    <!-- Sidebar/menu -->
+    <!-- #region sidebar -->
+    
+    <nav id="NavBar" class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px; border-right: 1px solid rgba(0,0,0,.35)" id="mySidebar">
+        <div class="w3-container w3-display-container w3-padding-16">
+            <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+            <h3 class="w3-wide">
+                <b>2 Guerra Mundial</b>
+            </h3>
+        </div>
+        
+        <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+            <!-- Pagina Principal -->
+            <a href="../../main.html" class="w3-bar-item w3-button">Página Principal</a>
+            <!-- Biografias menu -->
+            <a id="biografiaMenu" onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+                Biografias
+                <i class="fa fa-caret-down"></i>
+            </a>
+            <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+                <a href="../hitler/hitler.html" class="w3-bar-item w3-button">Hitler</a>
+                <a href="#" class="w3-bar-item w3-button">Mussolini</a>
+                <a href="#" class="w3-bar-item w3-button">Nome3</a>
+            </div>
+
+            <!-- Armas menu -->
+            <a id="armasMenu" onclick="myAccFuncArmas()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align"
+                id="myBtnArmas">
+                Armas
+                <i class="fa fa-caret-down"></i>
+            </a>
+            <div id="demoAccArmas" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+                <a href="#" class="w3-bar-item w3-button">Snipers</a>
+                <a href="#" class="w3-bar-item w3-button">Shotgun</a>
+                <a href="#" class="w3-bar-item w3-button">Sub machine</a>
+            </div>
+
+            <!-- Resumo menu -->
+            <a id="resumoMenu" onclick="myAccFuncResumo()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align"
+                id="myBtnResumo">
+                Resumo
+                <i class="fa fa-caret-down"></i>
+            </a>
+            <div id="demoAccResumo" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+                <a href="#" class="w3-bar-item w3-button">Pré guerra</a>
+                <a href="#" class="w3-bar-item w3-button">Guerra</a>
+                <a href="#" class="w3-bar-item w3-button">Pós Guerra</a>
+            </div>
+
+            <a href="#" class="w3-bar-item w3-button">Shoes</a>
+
+        </div>
+    
+        <!-- #endregion sidebar -->
+        <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a>
+        <a href="#footer" class="w3-bar-item w3-button w3-padding">Subscribe</a>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+        <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+
+    <div class="w3-hide-large" style="margin-top:83px"></div>
+    <div class="w3-main article" style="margin-left:260px">
+        <h1 id="title" class="main">Introdução</h1>
+        <div id="img" class="fright thumb">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Mussolini_mezzobusto.jpg/200px-Mussolini_mezzobusto.jpg"
+                alt="">
+            <section class="thumbcaption">
+                Mussolini
+            </section>
+        </div>
+                <p>Benito Mussolini era um político da itália e líder do partido fascista que havia sido fundado em 1919, quando acabou a Primeira Guerra Mundial.Tinha sido professor e escrevia jornais esquerdistas . Quando se alistou para o exército teve a patente de sargento. Teve o seu primeiro cargo de ministro da Itália em 1922 quando organizou a “Marcha sobre Roma” com o apoio do rei Vitor Emanuel III. Nas eleições “vigarizadas”os fascistas ganharam grande parte do parlamento e em 1925 Mussolini foi declarado “Duce” que é o condutor supremo da Itália.</p>
+            <h1 id="title" class="sub-title">Antes do poder</h1>
+                <p>Mussolini nasceu em Predappio, Forli na Itália no dia 29 de julho de 1883. É filho de Alessandro Mussolini que era um ferreiro socialista e a sua mãe era Rosa Maltoni, que era professora. Em 1902 para fugir ao serviço militar mas as suas ideias de esquerda fizeram no ser expulso do país. O que levou Mussolini a acreditar que a violência era algo fundamental para transformar uma sociedade foi as escritas filosóficas de Nietzsche. </p>
+            <h1 id="title" class="sub-title">Quando assumiu o poder</h1>
+                <p>Depois de ser nomeado para secretário do Partido Socialista foi editor do jornal La Lotta di Classe. Depois de um movimento que era contra a guerra turco-italiana foi para a prisão por 5 meses.  Mussolini já era um dos principais dirigentes socialistas da Itália em 1911. Passado um ano editou outro jornal porém este era um órgão do Partido Socialista que se chamava Avanti.</p>
+            
+                <p>Mussolini defendeu a França e a Grã Bretanha para sustentar a neutralidade da Itália na primeira guerra mundial sendo assim expulso do partido. Depois disso fundou o seu próprio jornal chamado Popolo d’Itália, onde defendia a suas ideias da entrada da Itália na guerra, organizando assim o Grupo de Ação Revolucionária. Em Abril de 1915 foi preso novamente. Quando a Itália declarou guerra com a Áustria, foi chamado, alistando-se no exercito recebeu a patente de sargento. </p>
+
+                <p>Houve uma grande crise por causa da guerra e perdas grandes financeiras e de humanos, a grande inflação e a falta de emprego levaram à grande agitação política revolucionária das esquerdas. Os partidos do governo não chegavam a consenso gerando impopularidade. </p>
+
+                <p>Então Mussolini em 1919 formou o Partido Fascista que tinha como ideal o fim do Senado, uma nova constituinte e a controlação de frábicas pelos operários e técnicos . Um movimento , em 1920, operário do norte da itália teve o suporte de Mussolini, que deu a ideia de have uma frente contra os patrões e trabalhadores da extrema-esquerda. No entanto foi rejeitada, mas Mussolini capitalizou por causa do pânico da burguesia com o comunismo , tendo recebido assim grandes contribuições. </p>
+
+                <p>Mussolini foi eleito em 1921 para o parlamento e com o apoio de elites foi organizado um ataque ao poder. 1922 foi o ano em que um exército armado de cinquenta mil homens, os chamados “camisas-negras”, foi para roma com a intenção de tomar o poder. O rei Victor Emanuel III não aguentou e o líder do fascismo foi nomeado primeiro ministro.Em 1924 com eleições vigarizadas os fascistas ganharam a maior parte do parlamento. No ano a seguir, Mussolini foi nomeado “Duce”, que é o condutor supremo da Itália. Assim nasceu o Estado Totalitário. </p>
+
+                <p>Mussolini em politica externa não conseguiu tanto com esperava por culpa do baixo poder militar da Itália. Em 1927 fez um protectorado há Albânia, invadiu a Etiópia em 1935 e em 1937 interveio na guerra civil espanhola. Na segunda guerra mundial tinha aliança com Hitler pelas grandes conquistas dos militares alemães, e por causa disso conseguiu ir para parte do território da lugoslávia.Foi derrotado na Grécia em 1940 e por África em 1941, e com o desembarque dos aliado em Sicília. </p>
+            <h1 id="title" class="sub-title">Quando assumiu o poder</h1>
+                <p> Em 1943 o grande conselho fascista repudiou a sua liderança. Mussolini tinha sido destituído e preso porém foi libertado pelos alemães . Tentou continuar no poder no norte da Itália, mas acabou por ser preso por italianos ao tentar fugir para a Suíça.Benito Amilcare Andrea Mussolini morreu ao lado da sua amante Claretta Petacci foi julgado e fusilado em 28 de abril de 1945. Os corpos de ambos foram expostos em Milão de cabeça para baixo na praça de loreto</p>
+
+    </div>
+    <!-- End page content -->
+
+
+    <!-- Newsletter Modal -->
+    <div id="newsletter" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+            <div class="w3-container w3-white w3-center">
+                <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+                <h2 class="w3-wide">NEWSLETTER</h2>
+                <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+                <p>
+                    <input class="w3-input w3-border" type="text" placeholder="Enter e-mail">
+                </p>
+                <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Accordion 
+        let myAccFuncBtn = document.getElementById("demoAcc");
+        myAccFuncBtn.addEventListener('click', ev => myAccFunc());
+
+        function myAccFunc() {
+            if (myAccFuncBtn.className.indexOf("w3-show") == -1) {
+                myAccFuncBtn.className += " w3-show";
+            } else {
+                myAccFuncBtn.className = myAccFuncBtn.className.replace(" w3-show", "");
+            }
+        }
+
+        let myAccFuncArmasBtn = document.getElementById("demoAccArmas");
+        myAccFuncArmasBtn.addEventListener('click', ev => myAccFuncArmas());
+
+        function myAccFuncArmas() {
+            if (myAccFuncArmasBtn.className.indexOf("w3-show") == -1) {
+                myAccFuncArmasBtn.className += " w3-show";
+            } else {
+                myAccFuncArmasBtn.className = myAccFuncArmasBtn.className.replace(" w3-show", "");
+            }
+        }
+        let myAccFuncResumoBtn = document.getElementById("demoAccResumo");
+        myAccFuncResumoBtn.addEventListener('click', ev => myAccFuncResumo());
+
+        function myAccFuncResumo() {
+            if (myAccFuncResumoBtn.className.indexOf("w3-show") == -1) {
+                myAccFuncResumoBtn.className += " w3-show";
+            } else {
+                myAccFuncResumoBtn.className = myAccFuncResumoBtn.className.replace(" w3-show", "");
+            }
+        }
+
+
+
+        // Click on the "Jeans" link on page load to open the accordion for demo purposes
+        // document.getElementById("myBtn").click();
+        // document.getElementById("myBtnArmas").click();
+        // document.getElementById("myBtnResumo").click();
+
+
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
